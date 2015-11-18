@@ -22,56 +22,53 @@ $( document ).ready(function() {
   });
 
   $('#submit-message').click(function(){
-    console.log('email sent');
-    // $.ajax({
-      // type: 'POST',
-      // url: 'https://mandrillapp.com/api/1.0/messages/send.json',
-      // data: {
-      //   'key': 'b6t3hTJ_NEL7lz8ulPoHuQ',
-      //   'message': {
-      //     'from_email': $('#email-input').val(),
-      //     'to': [
-      //         {
-      //           'email': 'daniel.jeffords@gmail.com',
-      //           'name': 'Personal Site Contact ' + $('#name-input').val(),
-      //           'type': 'to'
-      //         }
-      //       ],
-      //     'autotext': 'true',
-      //     'subject': 'Personal Site',
-      //     'html': 'MESSAGE: ' + $('#message-input').val() + '<br />EMAIL: ' + $('#email-input').val() + '<br />NAME: ' + $('#name-input').val()
-      //   }
-      // }
-     // }).done(function(response) {
-     //  console.log($('#email-input').val())
-     // });
+    $.ajax({
+      type: 'POST',
+      url: 'https://mandrillapp.com/api/1.0/messages/send.json',
+      data: {
+        'key': 'b6t3hTJ_NEL7lz8ulPoHuQ',
+        'message': {
+          'from_email': $('#email-input').val(),
+          'to': [
+              {
+                'email': 'daniel.jeffords@gmail.com',
+                'name': 'Personal Site Contact ' + $('#name-input').val(),
+                'type': 'to'
+              }
+            ],
+          'autotext': 'true',
+          'subject': 'Personal Site',
+          'html': 'MESSAGE: ' + $('#message-input').val() + '<br />EMAIL: ' + $('#email-input').val() + '<br />NAME: ' + $('#name-input').val()
+        }
+      }
+     }).done(function(response) {
+     });
     emailResponse();
   })
 
   var emailResponse = function(){
-    // $.ajax({
-      // type: 'POST',
-      // url: 'https://mandrillapp.com/api/1.0/messages/send.json',
-      // data: {
-      //   'key': 'b6t3hTJ_NEL7lz8ulPoHuQ',
-      //   'message': {
-      //     'from_email': 'daniel.jeffords@gmail.com',
-      //     'to': [
-      //         {
-      //           'email': $('#email-input').val(),
-      //           'name': 'Daniel Jeffords - ' + $('#name-input').val(),
-      //           'type': 'to'
-      //         }
-      //       ],
-      //     'autotext': 'true',
-      //     'subject': $('#name-input').val() + ' - Thank you for contacting Daniel Jeffords!',
-      //     'html': $('.email-template').html()
-      //   }
-      // }
-     // }).done(function(response) {
-      // console.log(response); // if you're into that sorta thing
+    $.ajax({
+      type: 'POST',
+      url: 'https://mandrillapp.com/api/1.0/messages/send.json',
+      data: {
+        'key': 'b6t3hTJ_NEL7lz8ulPoHuQ',
+        'message': {
+          'from_email': 'daniel.jeffords@gmail.com',
+          'to': [
+              {
+                'email': $('#email-input').val(),
+                'name': 'Daniel Jeffords - ' + $('#name-input').val(),
+                'type': 'to'
+              }
+            ],
+          'autotext': 'true',
+          'subject': $('#name-input').val() + ' - Thank you for contacting Daniel Jeffords!',
+          'html': $('.email-template').html()
+        }
+      }
+     }).done(function(response) {
       submittedTemplate();
-     // });
+     });
   }
 
   var submittedTemplate = function(){

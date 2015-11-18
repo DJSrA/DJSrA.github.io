@@ -533,7 +533,7 @@
     top: 30px !important;
     right: 0 !important;
     left: 0 !important;
-    height: 100%;
+    height: auto !important;
   }
 
   .contact-form {
@@ -544,7 +544,7 @@
 
   .close-x {
     display: block !important;
-    padding: 13px 40px !important;
+    padding: 13px 20px !important;
   }
 
   .submit-message-container {

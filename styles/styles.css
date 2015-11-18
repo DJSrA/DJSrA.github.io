@@ -74,9 +74,8 @@ li {
 
 
 .template-here {
-  min-height: 540px;
+  height: 540px;
   background: #141516;
-  max-height: 80%;
 }
 
 .body-container {
