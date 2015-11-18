@@ -152,7 +152,6 @@ li {
   height: 100vh;
   display: inline-block;
   background-size: cover;
-  overflow: hidden;
   float: right;
   text-align: left;
   color: #838B91;
