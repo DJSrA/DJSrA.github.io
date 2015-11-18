@@ -78,10 +78,6 @@ li {
   background: #141516;
 }
 
-.body-container {
-  overflow: hidden;
-}
-
 .body-container .left-container {
   width: 40%;
   height: 100vh;
@@ -100,7 +96,6 @@ li {
 }
 
 .left-container img {
-  /*display: none;*/
   height: 100%;
 }
 
@@ -167,13 +162,11 @@ li {
   margin: 40px;
   vertical-align: top;
   margin: 86px 100px 0px 100px;
-  overflow: hidden;
 }
 
 .right-content img {
   height: 200px;
   width: 200px;
-  overflow: hidden;
 }
 
 .body-container .right-content p {
