@@ -166,7 +166,7 @@ li {
 .right-content {
   margin: 40px;
   vertical-align: top;
-  margin: 184px 100px 0px 100px;
+  margin: 86px 100px 0px 100px;
   overflow: hidden;
 }
 
@@ -180,6 +180,19 @@ li {
   line-height: 37px;
   letter-spacing: 1px;
   font-size: 21px;
+}
+
+.right-content .social-ul {
+  margin-top: 68px;
+  padding-left: 0;
+  text-align: center;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+.right-content .social-ul li {
+  display: inline-block;
+  margin-right: 30px;
 }
 
 .close-x {
