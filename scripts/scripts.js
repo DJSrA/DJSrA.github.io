@@ -1,40 +1,24 @@
 $( document ).ready(function() {
-  $('.look-there').click(function(){
-    if($('.contact-form').hasClass('slide-toggle')){
-      $('.contact-form').removeClass('slide-toggle');
-      $('.contact-form').addClass('dont-display');
-      $('.look-there').text('CONTACT ME');
-      $('.submit-message-container').removeClass('dont-display');
-
+  $('.look-there').click(function(){              
+    if ($('.contact-form').is(':hidden')) {
+      $('.template-here').html($('.contact-form-content').html());
+      $('.submit-message-container').removeClass('dont-display'); 
+      $('.contact-form').show('slide',{direction:'left'},500);
     } else {
-      $('.contact-form').addClass('slide-toggle');
-      $('.contact-form').removeClass('dont-display');
-      $('.look-there').text('CLOSE FORM');
+       
+       $('.contact-form').hide('slide',{direction:'right'},500);
     }
-    if($('.submit-message-container').hasClass('dont-display')){
-      $('.submit-message-container').addClass('dont-display');
-    } else {
-      $('.submit-message-container').removeClass('dont-display');
-    }
-    $('.template-here').html($('.contact-form-content').html());
-  })
+  });
 
   $('.close-x').click(function(){
-    if($('.contact-form').hasClass('slide-toggle')){
-      $('.contact-form').removeClass('slide-toggle');
-      $('.look-there').text('CONTACT ME');
-      $('.submit-message-container').removeClass('dont-display');
-
+    if ($('.contact-form').is(':hidden')) {
+      $('.template-here').html($('.contact-form-content').html());
+      $('.submit-message-container').removeClass('dont-display'); 
+      $('.contact-form').show('slide',{direction:'left'},500);
     } else {
-      $('.contact-form').addClass('slide-toggle');
-      $('.look-there').text('CLOSE FORM');
+       
+       $('.contact-form').hide('slide',{direction:'right'},500);
     }
-    if($('.submit-message-container').hasClass('dont-display')){
-      $('.submit-message-container').addClass('dont-display');
-    } else {
-      $('.submit-message-container').removeClass('dont-display');
-    }
-    $('.template-here').html($('.contact-form-content').html());
   });
 
   $('#submit-message').click(function(){

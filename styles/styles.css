@@ -16,7 +16,7 @@
 body {
   margin: 0;
   background: #141516;
-  overflow-x: hidden; 
+  overflow-x: hidden !important; 
 }
 
 h6, h5, h4, h3, h2, h1 {
@@ -140,10 +140,10 @@ li {
   background-position: right bottom;
   height: 50px;
   box-sizing: border-box;
-  -webkit-transition: all 100ms ease;
-  -moz-transition: all 100ms ease;
-  -o-transition: all 100ms ease;
-  transition: all 100ms ease;
+  -webkit-transition: all 240ms ease-in;
+  -moz-transition: all 240ms ease-in;
+  -o-transition: all 240ms ease-in;
+  transition: all 240ms ease-in;
   padding-top: 14px;
 }
 
@@ -192,15 +192,18 @@ li {
 .contact-form {
   position: absolute;
   width: 60%;
-  background-color: white;
+  color: #838B91;
+  background: #141516;
+  font-family: 'SourceSansPro', 'Helvetica', 'Ariel';
+  display: none;
   top: 0;
   bottom: 0;
   height: 100%;
-  right: -100%;
-  -webkit-transition: all 500ms ease;
+  right: 0;
+/*  -webkit-transition: all 500ms ease;
   -moz-transition: all 500ms ease;
   -o-transition: all 500ms ease;
-  transition: all 500ms ease;
+  transition: all 500ms ease;*/
 }
 
 .display-none {
@@ -218,21 +221,14 @@ li {
   -o-transition: right 500ms ease;
   transition: right 500ms ease;
   right: 0 !important;
-  width: 80%;
-}
-
-.contact-form {
-  color: #838B91;
-  background: #141516;
-  font-family: 'SourceSansPro', 'Helvetica', 'Ariel';
+  /*visibility: visible;*/
 }
 
 .contact-us-list {
-  width: 0;
+  width: 80%;
   text-align: left;
   height: 100%;
   margin-top: 60px;
-  /*visibility: hidden;*/
   -webkit-transition: all 400ms ease;
   -moz-transition: all 400ms ease;
   -o-transition: all 400ms ease;

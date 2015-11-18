@@ -556,6 +556,10 @@
     margin: 60px 20px 0px 20px !important;
   }
 
+  .contact-form {
+    left: 0;
+  }
+
   .contact-us-list li {
     padding-bottom: 15px;
   }
