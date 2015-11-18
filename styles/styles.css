@@ -83,7 +83,7 @@ li {
   display: inline-block;
   background-size: cover;
   overflow: hidden;
-  background: url('../images/dan-arms-2.jpg')no-repeat;
+  background: url('../images/dan-arms-2.jpg')no-repeat 49% center fixed;
   background-size: cover;
 }
 
@@ -191,7 +191,7 @@ li {
   top: 0;
   bottom: 0;
   height: 100%;
-  /*display: none;*/
+  overflow: hidden;
   right: -100%;
   -webkit-transition: all 500ms ease;
   -moz-transition: all 500ms ease;
