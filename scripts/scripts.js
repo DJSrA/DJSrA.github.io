@@ -85,6 +85,7 @@ $( document ).ready(function() {
 
   var animateSubmitted = function(){
     $('.template-here').html($('.submitted-template').html())
+    $("html, body").animate({ scrollTop: 0 }, 200);
     setTimeout(finishSubmitted, 400);
   }
 

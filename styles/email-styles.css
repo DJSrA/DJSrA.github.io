@@ -549,12 +549,18 @@
 
   .submit-message-container {
     position: absolute !important;
-    bottom: 40px !important;
+    bottom: 15px !important;
   }
 
   .contact-form {
     left: 0;
     height: 100vh !important;
+  }
+
+  .contact-us-list {
+    margin-top: 25px !important;
+    width: 90% !important;
+    padding-left: 5% !important;
   }
 
   .contact-us-list li {
@@ -563,11 +569,13 @@
 
   .contact-us-list li input {
     padding: 0 5px !important;
+    width: 100% !important;
   }
 
   .contact-us-list li textarea {
     height: 180px !important;
     padding: 15px 15px !important;
+    width: 100% !important;
   }
 
   .contact-us-list li label {
