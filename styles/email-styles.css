@@ -558,9 +558,10 @@
 
   .contact-form {
     left: 0;
+    height: 100vh;
   }
 
-  .contact-us-list li {
+/*  .contact-us-list li {
     padding-bottom: 15px;
   }
 
@@ -568,15 +569,15 @@
     width: 96%;
     height: 45px;
     padding: 0 5px;
-  }
+  }*/
 
   .contact-us-list li textarea {
-    width: 96%;
+    /*width: 96%;*/
     height: 180px;
-    padding: 15px 15px;
+    /*padding: 15px 15px;*/
   }
 
-  .contact-us-list li label {
+/*  .contact-us-list li label {
     padding-bottom: 8px;
-  }
+  }*/
 }
