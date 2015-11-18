@@ -1,26 +1,292 @@
 <html>
 <head>
   <title>Daniel Jeffords</title>
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/underscore/underscore-min.js"></script>
+  <script src="scripts/scripts.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="styles/email-styles.css">
   <link rel="stylesheet" type="text/css" href="styles/styles.css">
 </head>
 <body>
-  <div class="left-container">
-    <img src="images/dan-arms.jpg">
-    <div class="left-content">
-      <h1>Hey There!<br />I'm <span class="accent"><a target="_blank" href="https://www.linkedin.com/profile/view?id=AAIAAAKFC-YB-cwv5izKTCjuIpdew12OYnB_XgY&trk=nav_responsive_tab_profile">Daniel Jeffords</a></span>.</h1>
-      <h1> I work as a front/backend coder and part time operations director for my wildly talented wife <span class="accent"><a target="_blank" href="http://emilyjeffords.com/">Emily</a></span>.</h1>
-      <div class="look-there">Look Over There&nbsp;&nbsp;></div>
-      <img class="logo" src="images/crosslogo.png">
+  <div class="body-container">
+    <div class="left-container">
+      <div class="left-content">
+        <h1>Hey There!<br />I'm <span class="accent"><a target="_blank" href="https://www.linkedin.com/profile/view?id=AAIAAAKFC-YB-cwv5izKTCjuIpdew12OYnB_XgY&trk=nav_responsive_tab_profile">Daniel Jeffords</a></span></h1>
+        <div class="look-there">CONTACT ME</div>
+        <img class="logo" src="images/crosslogo.png">
+      </div>
+  <!--     <div class="filter">
+      </div> -->
+    </div>  
+    <div class="right-container">
+      <div class="right-content">
+        <p>I enjoy working with small teams to create useful, beautiful, fast and easy to use web applications. You may see me head down at the <span class="accent"><a target="_blank" href="http://www.designsponge.com/2015/10/studio-tour-emily-jeffords.html">studio</a></span>, prototyping and philosophizing with the amazing people at <span class="accent"><a target="_blank" href="http://www.coworkgreenville.com/">CoWork</a></span> or socializing at <span class="accent">Methodical Coffee</span>. Over the past few years I've been a CTO with a Michelin backed accelerator company called <span class="accent"><a target="_blank" href="http://mymechanicapp.com/">My Mechanic</a></span>, founded a cool company named <span class="accent"><a target="_blank" href="http://oplan.co/">OPLAN</a></span>, worked as a dev with <span class="accent"><a target="_blank" href="http://ngenworks.com/">nGen Works</a></span> and completed numerous freelance projects. Some of the languages I like to use are <span class="accent"><a target="_blank" href="https://www.javascript.com/">JavaScript</a></span> and <span class="accent"><a target="_blank" href="https://www.ruby-lang.org/en/">Ruby</a></span>.</p>
+          <p></p>
+      </div>
     </div>
-    <div class="filter">
-    </div>
-  </div>  
-  <div class="right-container">
-    <div class="right-content">
-      <p>I enjoy working with small teams to create useful, beautiful, fast and easy to use web applications. You may see me head down at the <span class="accent"><a target="_blank" href="http://www.designsponge.com/2015/10/studio-tour-emily-jeffords.html">studio</a></span>, prototyping and philosophizing with the amazing people at <span class="accent"><a target="_blank" href="http://www.coworkgreenville.com/">CoWork</a></span> or socializing at <span class="accent">Methodical Coffee</span>. Over the past few years I've been a CTO with a Michelin backed accelerator company called <span class="accent"><a target="_blank" href="http://mymechanicapp.com/">My Mechanic</a></span>, founded a cool company named <span class="accent"><a target="_blank" href="http://oplan.co/">OPLAN</a></span>, worked as a dev with <span class="accent"><a target="_blank" href="http://ngenworks.com/">nGen Works</a></span> and worked on numerous freelance projects. Some of the languages I like to use are <span class="accent"><a target="_blank" href="https://www.javascript.com/">JavaScript</a></span> and <span class="accent"><a target="_blank" href="https://www.ruby-lang.org/en/">Ruby</a></span>.</p>
-        <p></p>
-    </div>
+    <div class="contact-form display-none">
+<!--       <div class="close-x accent">CLOSE</div>
+ -->      <div class="template-here"></div>
+      <ul class="col-md-10 col-md-offset-1">
+        <li class="submit-message-container">
+            <button class="btn btn-default submit-message col-md-8 col-md-offset-2" id="submit-message">SUBMIT</button>
+        </li>
+      </ul>
   </div>
+
+  <script type="text/template" class="contact-form-content">
+    <ul class="contact-us-list col-md-10 col-md-offset-1">
+        <li class="name-container">
+            <div class="form-group">
+                <label for="exampleInputEmail1">YOUR NAME</label>
+                <input class="form-control contact-input" id="name-input" placeholder="Name">
+            </div>
+        </li>
+        <li class="email-container">
+          <div class="form-group">
+              <label for="exampleInputEmail1">YOUR EMAIL</label>
+              <input type="email" class="form-control contact-input" id="email-input" placeholder="Email">
+          </div>
+        </li>
+        <li class="message-container">
+            <div class="form-group">
+                <label for="exampleInputEmail1">YOUR MESSAGE</label>
+                <textarea type="email" class="form-control contact-input" id="message-input" placeholder="Message..."></textarea>
+            </div>
+        </li>
+    </ul>
+  </script>
+
+  <script type="text/template" class="submitted-template">
+    <div class="submitted-container">
+      <h1 cass="submitted-title">Thank you!</h1>
+      <p class="submitted-text-one">I will respond as quickly as possible!</p>
+      <p class="submitted-text-two">In the mean time, please feel free to look me up on social media</p>
+      <ul>
+        <li class="social-link accent"><a target="_blank" href="https://www.linkedin.com/profile/view?id=AAIAAAKFC-YB-cwv5izKTCjuIpdew12OYnB_XgY&trk=nav_responsive_tab_profile">LinkedIn</a></li>
+        <li class="social-link accent"><a target="_blank" href="https://instagram.com/danjeffords/">Instagram</a></li>
+      </ul>
+    </div>
+  </script>
+
+  <script type="text/template" class="email-template">
+          <center>
+              <table align="center" border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" id="bodyTable">
+                  <tr>
+                      <td align="center" valign="top" id="bodyCell">
+                          <!-- BEGIN TEMPLATE // -->
+              <!--[if gte mso 9]>
+              <table align="center" border="0" cellspacing="0" cellpadding="0" width="600" style="width:600px;">
+              <tr>
+              <td align="center" valign="top" width="600" style="width:600px;">
+              <![endif]-->
+                          <table border="0" cellpadding="0" cellspacing="0" width="100%" class="templateContainer">
+                              <tr>
+                                  <td valign="top" id="templatePreheader"><table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnTextBlock">
+      <tbody class="mcnTextBlockOuter">
+          <tr>
+              <td valign="top" class="mcnTextBlockInner">
+                  
+                  <table align="left" border="0" cellpadding="0" cellspacing="0" width="366" class="mcnTextContentContainer">
+                      <tbody><tr>
+                          
+                          <td valign="top" class="mcnTextContent" style="padding-top:9px; padding-left:18px; padding-bottom:9px; padding-right:0;">
+                          
+                              
+                          </td>
+                      </tr>
+                  </tbody></table>
+                  
+                  <table align="right" border="0" cellpadding="0" cellspacing="0" width="197" class="mcnTextContentContainer">
+                      <tbody><tr>
+                          
+                          <td valign="top" class="mcnTextContent" style="padding-top:9px; padding-right:18px; padding-bottom:9px; padding-left:0;">
+                          
+                              <a href="*|ARCHIVE|*" target="_blank">View this email in your browser</a>
+                          </td>
+                      </tr>
+                  </tbody></table>
+                  
+              </td>
+          </tr>
+      </tbody>
+  </table></td>
+                              </tr>
+                              <tr>
+                                  <td valign="top" id="templateHeader"><table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnImageBlock" style="min-width:100%;">
+      <tbody class="mcnImageBlockOuter">
+              <tr>
+                  <td valign="top" style="padding:9px" class="mcnImageBlockInner">
+                      <table align="left" width="100%" border="0" cellpadding="0" cellspacing="0" class="mcnImageContentContainer" style="min-width:100%;">
+                          <tbody><tr>
+                              <td class="mcnImageContent" valign="top" style="padding-right: 9px; padding-left: 9px; padding-top: 0; padding-bottom: 0; text-align:center;">
+                                  
+                                      
+                                          <img align="center" alt="" src="https://gallery.mailchimp.com/5c1acf2805c68e68ceb2fa874/images/6d912a7f-215b-4af3-9af0-ee61809d8c06.jpg" width="564" style="max-width:1024px; padding-bottom: 0; display: inline !important; vertical-align: bottom;" class="mcnImage">
+                                      
+                                  
+                              </td>
+                          </tr>
+                      </tbody></table>
+                  </td>
+              </tr>
+      </tbody>
+  </table></td>
+                              </tr>
+                              <tr>
+                                  <td valign="top" id="templateBody"><table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnTextBlock">
+      <tbody class="mcnTextBlockOuter">
+          <tr>
+              <td valign="top" class="mcnTextBlockInner">
+                  
+                  <table align="left" border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnTextContentContainer">
+                      <tbody><tr>
+                          
+                          <td valign="top" class="mcnTextContent" style="padding-top:9px; padding-right: 18px; padding-bottom: 9px; padding-left: 18px;">
+                          
+                              <h1>I'm so glad you reached out!</h1>
+
+  <p>You must be a pretty great person!<br>
+  <br>
+  Time is important and quick communication is key! I'll get back with you as soon as possible.<br>
+  <br>
+  Thanks again for contacting me!<br>
+  <br>
+  Daniel<br>
+  daniel.jeffords@gmail.com</p>
+
+                          </td>
+                      </tr>
+                  </tbody></table>
+                  
+              </td>
+          </tr>
+      </tbody>
+  </table></td>
+                              </tr>
+                              <tr>
+                                  <td valign="top" id="templateFooter"><table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnFollowBlock">
+      <tbody class="mcnFollowBlockOuter">
+          <tr>
+              <td align="center" valign="top" style="padding:9px" class="mcnFollowBlockInner">
+                  <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnFollowContentContainer">
+      <tbody><tr>
+          <td align="center" style="padding-left:9px;padding-right:9px;">
+              <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnFollowContent">
+                  <tbody><tr>
+                      <td align="center" valign="top" style="padding-top:9px; padding-right:9px; padding-left:9px;">
+                          <table border="0" cellpadding="0" cellspacing="0">
+                              <tbody><tr>
+                                  <td valign="top">
+                                      <!--[if mso]>
+                                      <table align="left" border="0" cellspacing="0" cellpadding="0" width="524">
+                                      <tr>
+                                      <td align="left" valign="top" width="524">
+                                      <![endif]-->
+                                      
+                                          
+                                          
+                                              <table align="left" border="0" cellpadding="0" cellspacing="0">
+                                                  <tbody><tr>
+                                                      <td valign="top" style="padding-right:10px; padding-bottom:9px;" class="mcnFollowContentItemContainer">
+                                                          <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnFollowContentItem">
+                                                              <tbody><tr>
+                                                                  <td align="left" valign="middle" style="padding-top:5px; padding-right:10px; padding-bottom:5px; padding-left:9px;">
+                                                                      <table align="left" border="0" cellpadding="0" cellspacing="0" width="">
+                                                                          <tbody><tr>
+                                                                              
+                                                                                  <td align="center" valign="middle" width="24" class="mcnFollowIconContent">
+                                                                                      <a href="https://www.linkedin.com/profile/view?id=AAIAAAKFC-YB-cwv5izKTCjuIpdew12OYnB_XgY&amp;trk=nav_responsive_tab_profile" target="_blank"><img src="http://cdn-images.mailchimp.com/icons/social-block-v2/color-linkedin-48.png" style="display:block;" height="24" width="24" class=""></a>
+                                                                                  </td>
+                                                                              
+                                                                              
+                                                                          </tr>
+                                                                      </tbody></table>
+                                                                  </td>
+                                                              </tr>
+                                                          </tbody></table>
+                                                      </td>
+                                                  </tr>
+                                              </tbody></table>
+                                          
+                                      
+                                          
+                                          
+                                              <table align="left" border="0" cellpadding="0" cellspacing="0">
+                                                  <tbody><tr>
+                                                      <td valign="top" style="padding-right:0; padding-bottom:9px;" class="mcnFollowContentItemContainer">
+                                                          <table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnFollowContentItem">
+                                                              <tbody><tr>
+                                                                  <td align="left" valign="middle" style="padding-top:5px; padding-right:10px; padding-bottom:5px; padding-left:9px;">
+                                                                      <table align="left" border="0" cellpadding="0" cellspacing="0" width="">
+                                                                          <tbody><tr>
+                                                                              
+                                                                                  <td align="center" valign="middle" width="24" class="mcnFollowIconContent">
+                                                                                      <a href="http://djsra.github.io/" target="_blank"><img src="http://cdn-images.mailchimp.com/icons/social-block-v2/color-link-48.png" style="display:block;" height="24" width="24" class=""></a>
+                                                                                  </td>
+                                                                              
+                                                                              
+                                                                          </tr>
+                                                                      </tbody></table>
+                                                                  </td>
+                                                              </tr>
+                                                          </tbody></table>
+                                                      </td>
+                                                  </tr>
+                                              </tbody></table>
+                                          
+                                      
+                                      <!--[if mso]>
+                                      </td>
+                                      </tr>
+                                      </table>
+                                      <![endif]-->
+                                  </td>
+                              </tr>
+                          </tbody></table>
+                      </td>
+                  </tr>
+              </tbody></table>
+          </td>
+      </tr>
+  </tbody></table>
+
+              </td>
+          </tr>
+      </tbody>
+  </table><table border="0" cellpadding="0" cellspacing="0" width="100%" class="mcnDividerBlock" style="min-width:100%;">
+      <tbody class="mcnDividerBlockOuter">
+          <tr>
+              <td class="mcnDividerBlockInner" style="min-width: 100%; padding: 10px 18px 25px;">
+                  <table class="mcnDividerContent" border="0" cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%;border-top-width: 2px;border-top-style: solid;border-top-color: #EEEEEE;">
+                      <tbody><tr>
+                          <td>
+                              <span></span>
+                          </td>
+                      </tr>
+                  </tbody></table>
+  <!--            
+                  <td class="mcnDividerBlockInner" style="padding: 18px;">
+                  <hr class="mcnDividerContent" style="border-bottom-color:none; border-left-color:none; border-right-color:none; border-bottom-width:0; border-left-width:0; border-right-width:0; margin-top:0; margin-right:0; margin-bottom:0; margin-left:0;" />
+  -->
+              </td>
+          </tr>
+      </tbody>
+  </table></td>
+                              </tr>
+                          </table>
+              <!--[if gte mso 9]>
+              </td>
+              </tr>
+              </table>
+              <![endif]-->
+                          <!-- // END TEMPLATE -->
+                      </td>
+                  </tr>
+              </table>
+          </center>
+  </script>
 
 </body>
 </html>
