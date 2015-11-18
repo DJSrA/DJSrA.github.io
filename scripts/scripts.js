@@ -16,9 +16,11 @@ $( document ).ready(function() {
       $('.form-template').html($('.contact-form-content').html());
       $('.submit-message-container').removeClass('dont-display'); 
       $('.contact-form').show('slide',{direction:'left'},500);
-    } else {
-       
-       $('.contact-form').hide('slide',{direction:'right'},500);
+      $('.look-there').text('CLOSE CONTACT');
+
+    } else {       
+      $('.contact-form').hide('slide',{direction:'right'},500);
+      $('.look-there').text('CONTACT ME');
     }
   });
 
