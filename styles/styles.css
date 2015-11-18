@@ -367,7 +367,7 @@ li {
 } @media only screen and (max-width: 840px){
   .left-container {
     width: 100% !important;
-    background: url('../images/dan-arms-2.jpg')no-repeat !important;
+    background: url('../images/Dan3.jpg')no-repeat 49% top fixed !important;
   }
 
   .right-container {
