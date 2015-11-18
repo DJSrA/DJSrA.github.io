@@ -549,12 +549,18 @@
 
   .submit-message-container {
     position: absolute !important;
-    bottom: 15px !important;
+    left: 26% !important;
   }
 
   .contact-form {
     left: 0;
     height: 100vh !important;
+  }
+
+  .submit-ul {
+    position: relative !important;
+    height: 62% !important;
+    text-align: center !important;
   }
 
   .contact-us-list {

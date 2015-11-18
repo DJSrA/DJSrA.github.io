@@ -1,7 +1,7 @@
 $( document ).ready(function() {
   $('.look-there').click(function(){              
     if ($('.contact-form').is(':hidden')) {
-      $('.template-here').html($('.contact-form-content').html());
+      $('.form-template').html($('.contact-form-content').html());
       $('.submit-message-container').removeClass('dont-display'); 
       $('.contact-form').show('slide',{direction:'left'},500);
     } else {
@@ -12,7 +12,7 @@ $( document ).ready(function() {
 
   $('.close-x').click(function(){
     if ($('.contact-form').is(':hidden')) {
-      $('.template-here').html($('.contact-form-content').html());
+      $('.form-template').html($('.contact-form-content').html());
       $('.submit-message-container').removeClass('dont-display'); 
       $('.contact-form').show('slide',{direction:'left'},500);
     } else {
