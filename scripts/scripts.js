@@ -17,16 +17,23 @@ $( document ).ready(function() {
     $('.template-here').html($('.contact-form-content').html());
   })
 
-  // $('.close-x').click(function(){
-  //   if($('.contact-form').hasClass('slide-toggle')){
-  //     $('.contact-form').removeClass('slide-toggle');
-  //   } else {
-  //     $('.contact-form').addClass('slide-toggle');
-  //   }
-  //   $('.contact-form').removeClass('display-none');   
-  //   $('.submit-message-container').toggleClass('dont-display');
-  //   $('.template-here').html(''); 
-  // });
+  $('.close-x').click(function(){
+    if($('.contact-form').hasClass('slide-toggle')){
+      $('.contact-form').removeClass('slide-toggle');
+      $('.look-there').text('CONTACT ME');
+      $('.submit-message-container').removeClass('dont-display');
+
+    } else {
+      $('.contact-form').addClass('slide-toggle');
+      $('.look-there').text('CLOSE FORM');
+    }
+    if($('.submit-message-container').hasClass('dont-display')){
+      $('.submit-message-container').addClass('dont-display');
+    } else {
+      $('.submit-message-container').removeClass('dont-display');
+    }
+    $('.template-here').html($('.contact-form-content').html());
+  });
 
   $('#submit-message').click(function(){
     console.log('email sent');

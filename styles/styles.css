@@ -88,9 +88,10 @@ li {
 }
 
 .body-container .left-container h1 {
-  margin: 40px;
+  margin: 40px 0 100px 0;
   color: #FFFFFF;
   font-size: 52px;
+  text-align: center;
 }
 
 .left-container img {
@@ -177,6 +178,7 @@ li {
 }
 
 .close-x {
+  display: none;
   font-family: 'SourceSansPro', 'Helvetica', 'Ariel';
   padding: 40px;
   cursor: pointer;
@@ -211,7 +213,7 @@ li {
   -moz-transition: right 500ms ease;
   -o-transition: right 500ms ease;
   transition: right 500ms ease;
-  right: 0;
+  right: 0 !important;
 }
 
 .contact-form {
@@ -314,3 +316,31 @@ li {
 }
 
 /*___________________________________________*/
+
+@media all and (max-device-width: 1085px) {
+    .left-content h1 {
+      font-size: 36px;
+    }
+
+    .right-content {
+      margin: 60px 100px 0px 100px;
+    }
+
+    .right-content p {
+      font-size: 17px;
+    }
+}
+
+@media all and (min-device-width: 900px) and (max-device-width: 1085px) and (-webkit-min-device-pixel-ratio: 1) { 
+    .left-content h1 {
+      font-size: 36px;
+    }
+
+    .right-content {
+      margin: 60px 100px 0px 100px;
+    }
+
+    .right-content p {
+      font-size: 17px;
+    }
+}
