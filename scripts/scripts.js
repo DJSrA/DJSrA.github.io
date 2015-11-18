@@ -7,6 +7,7 @@ $( document ).ready(function() {
 
     } else {
       $('.contact-form').addClass('slide-toggle');
+      $('.contact-form').css('display', 'block');
       $('.look-there').text('CLOSE FORM');
     }
     if($('.submit-message-container').hasClass('dont-display')){
