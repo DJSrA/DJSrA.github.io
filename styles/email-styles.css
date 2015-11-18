@@ -558,7 +558,7 @@
 
   .contact-form {
     left: 0;
-    height: 100vh;
+    height: 100vh !important;
   }
 
 /*  .contact-us-list li {
@@ -573,7 +573,7 @@
 
   .contact-us-list li textarea {
     /*width: 96%;*/
-    height: 180px;
+    height: 180px !important;
     /*padding: 15px 15px;*/
   }
 
