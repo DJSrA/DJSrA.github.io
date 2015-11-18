@@ -218,6 +218,7 @@ li {
   -o-transition: right 500ms ease;
   transition: right 500ms ease;
   right: 0 !important;
+  width: 80%;
 }
 
 .contact-form {
@@ -227,10 +228,11 @@ li {
 }
 
 .contact-us-list {
-  width: 80%;
+  width: 0;
   text-align: left;
   height: 100%;
   margin-top: 60px;
+  /*visibility: hidden;*/
   -webkit-transition: all 400ms ease;
   -moz-transition: all 400ms ease;
   -o-transition: all 400ms ease;
