@@ -16,6 +16,7 @@
 body {
   margin: 0;
   background: #141516;
+  overflow-x: hidden; 
 }
 
 h6, h5, h4, h3, h2, h1 {
@@ -190,7 +191,6 @@ li {
 
 .contact-form {
   position: absolute;
-  visibility: hidden;
   width: 60%;
   background-color: white;
   top: 0;
@@ -218,7 +218,6 @@ li {
   -o-transition: right 500ms ease;
   transition: right 500ms ease;
   right: 0 !important;
-  visibility: visible;
 }
 
 .contact-form {
