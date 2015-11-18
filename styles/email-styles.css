@@ -548,8 +548,7 @@
   }
 
   .submit-message-container {
-    position: absolute !important;
-    left: 26% !important;
+    margin: 0 !important;
   }
 
   .contact-form {
@@ -558,13 +557,14 @@
   }
 
   .submit-ul {
-    position: relative !important;
-    height: 62% !important;
     text-align: center !important;
+    padding: 0 !important;
+    margin: 0 !important;
   }
 
   .contact-us-list {
     margin-top: 25px !important;
+    margin-bottom: 0 !important;
     width: 90% !important;
     padding-left: 5% !important;
   }
