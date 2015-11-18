@@ -77,13 +77,17 @@ li {
   background: #141516;
 }
 
+.body-container {
+  overflow: hidden;
+}
+
 .body-container .left-container {
   width: 40%;
   height: 100vh;
   display: inline-block;
   background-size: cover;
   overflow: hidden;
-  background: url('../images/dan-arms-2.jpg')no-repeat;
+  background: url('../images/dan-arms-2.jpg')no-repeat 49% center fixed;
   background-size: cover;
 }
 
@@ -186,12 +190,12 @@ li {
 
 .contact-form {
   position: absolute;
+  visibility: hidden;
   width: 60%;
   background-color: white;
   top: 0;
   bottom: 0;
   height: 100%;
-  /*display: none;*/
   right: -100%;
   -webkit-transition: all 500ms ease;
   -moz-transition: all 500ms ease;
@@ -214,6 +218,7 @@ li {
   -o-transition: right 500ms ease;
   transition: right 500ms ease;
   right: 0 !important;
+  visibility: visible;
 }
 
 .contact-form {
