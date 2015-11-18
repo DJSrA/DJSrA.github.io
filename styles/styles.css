@@ -192,7 +192,7 @@ li {
   bottom: 0;
   height: 100%;
   /*display: none;*/
-  right: -60%;
+  right: -100%;
   -webkit-transition: all 500ms ease;
   -moz-transition: all 500ms ease;
   -o-transition: all 500ms ease;
