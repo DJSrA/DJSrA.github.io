@@ -2,12 +2,13 @@ $( document ).ready(function() {
   $('.look-there').click(function(){
     if($('.contact-form').hasClass('slide-toggle')){
       $('.contact-form').removeClass('slide-toggle');
+      $('.contact-form').addClass('dont-display');
       $('.look-there').text('CONTACT ME');
       $('.submit-message-container').removeClass('dont-display');
 
     } else {
       $('.contact-form').addClass('slide-toggle');
-      $('.contact-form').css('display', 'block');
+      $('.contact-form').removeClass('dont-display');
       $('.look-there').text('CLOSE FORM');
     }
     if($('.submit-message-container').hasClass('dont-display')){
