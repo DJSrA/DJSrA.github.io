@@ -48,7 +48,7 @@ li {
 }
 
 .accent {
-  color: #D8C496;
+  color: #cc9900;
 }
 
 .lighter {
@@ -130,7 +130,7 @@ li {
   text-align: center;
   cursor: pointer;
   color: #FFFFFF;
-  background: linear-gradient(to right, #141516 50%, #1C1C1D 50%);
+  background: linear-gradient(to right, #cc9900 50%, #1C1C1D 50%);
   background-size: 200% 100%;
   background-position: right bottom;
   height: 50px;
@@ -144,7 +144,7 @@ li {
 
 .look-there:hover {
   background-position:left bottom;
-  color: #D8C496;
+  color: #1C1C1D;
 }
 
 .body-container .right-container {
