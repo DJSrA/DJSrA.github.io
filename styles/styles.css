@@ -267,12 +267,12 @@ li {
 #submit-message {
   font-family: 'SourceSansPro-Regular', 'Helvetica', 'Ariel';
   font-size: 18px;
-  border: 1px solid #D8C496;
+  border: 1px solid #cc9900;
   width: 200px;
   margin: 0 auto;
   box-sizing: border-box;
   padding: 10px;
-  color: #D8C496;
+  color: #cc9900;
   background: none;
   cursor: pointer;
 }
