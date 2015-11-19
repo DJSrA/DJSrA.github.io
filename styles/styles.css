@@ -129,7 +129,7 @@ li {
   letter-spacing: 1px;
   text-align: center;
   cursor: pointer;
-  color: #FFFFFF;
+  color: #cc9900;
   background: linear-gradient(to right, #cc9900 50%, #1C1C1D 50%);
   background-size: 200% 100%;
   background-position: right bottom;
@@ -367,7 +367,16 @@ li {
 } @media only screen and (max-width: 840px){
   .left-container {
     width: 100% !important;
-    background: url('../images/Dan3.jpg')no-repeat 49% top fixed !important;
+    background-color: #000;
+    background-image: url('../images/Dan3.jpg') !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    /*background: url('../images/Dan3.jpg')no-repeat 49% top fixed !important;*/
   }
 
   .right-container {
